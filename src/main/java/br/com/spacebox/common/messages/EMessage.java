@@ -13,6 +13,7 @@ public enum EMessage {
     ALREADYEXISTS_NAME("validation.alreadyexists.name"),
     ALREADYEXISTS_EMAIL("validation.alreadyexists.email"),
     INVALID_LOGIN("validation.invalid.username"),
+    ERROR_AUTHSERVICEUNAVAILABLE("message.error.authserviceunavailable"),
     GENERIC_ERROR("message.error.generic");
 
     private String key;
