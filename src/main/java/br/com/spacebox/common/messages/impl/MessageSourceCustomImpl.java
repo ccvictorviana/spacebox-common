@@ -13,8 +13,10 @@ public class MessageSourceCustomImpl implements MessageSourceCustom {
     @Autowired
     private MessageSource messageSource;
 
+    private Locale BRAZIL = new Locale("pt", "BR");
+
     @Override
     public String getMessage(EMessage eMessage) {
-        return messageSource.getMessage(eMessage.getKey(), null, Locale.ENGLISH);
+        return messageSource.getMessage(eMessage.getKey(), null, BRAZIL);
     }
 }
